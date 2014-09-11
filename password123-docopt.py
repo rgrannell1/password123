@@ -24,7 +24,7 @@ Options:
 	--secure        Should password123 securely prompt for your password?
 	                This is a good idea if you indent to use the password
 	                you are checking is actually your password.
-    --version       Show the version number.
+	--version       Show the version number.
 """
 
 from docopt      import docopt
@@ -40,5 +40,5 @@ if __name__ == '__main__':
 
 	main({
 		"passwords": arguments['<password>'],
-		"secure":    arguments['--secure']
+		"secure":    arguments['--secure'] or arguments['-s']
 	})

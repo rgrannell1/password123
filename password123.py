@@ -2,7 +2,7 @@
 
 import os
 import sys
-
+import getpass
 
 
 
@@ -35,7 +35,10 @@ bad_passwords = set(contents.split(','))
 def main (args):
 
 	if args['secure']:
-		1
+
+		password = getpass.getpass("[password123] enter your password:")
+		print(password in bad_passwords)
+
 	else:
 		for password in args['passwords']:
 			print(password in bad_passwords)
