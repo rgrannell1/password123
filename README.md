@@ -1,10 +1,13 @@
 password123
 --------------------------------------------
 
-password123 is a command-line tool for checking if one of the 10,000 most commonly used.
+password123 is a command-line tool for checking if a password is one of the
+10,000 most commonly used. Such passwords should not be used, as they are highly
+vulnerable to brute force attacks.
 
-I made this tool because it was easy to make, but perhaps someone will find it useful. Password123
-is written in Python and is therefore not very performant, so it is unsuitable for malicious purposes.
+This tool complements my other password tools, [polonium](https://github.com/rgrannell1/polonium) and
+[polonium-gui]. These tools generate secure site-specific passwords given a secure master password, but
+they give little security if your password is on this list.
 
 The list of passwords was compiled by Mark Burnett of [xato.net](https://xato.net/about/).
 
