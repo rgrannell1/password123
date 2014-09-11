@@ -26,6 +26,9 @@ bad_passwords = set(contents.split(','))
 
 
 
-def main (passwords):
+def main (args):
 
-	[print(password in bad_passwords) for password in passwords]
+	if args['secure']:
+		1
+	else:
+		[print(password in bad_passwords) for password in passwords]
