@@ -6,10 +6,16 @@ import sys
 
 
 
+dpath           = os.path.dirname(os.path.realpath(__file__))
+passwords_fpath = os.path.join(dpath, 'most-common.csv')
+
+
+
+
 try:
-	conn     = open('most-common.csv', 'r', encoding = 'utf-8')
+	conn     = open(passwords_fpath, 'r')
 except IOError:
-	print('most-common.csv - the list of bad passwords - not found. Did you delete it?')
+	print(passwords_fpath + ' - the list of bad passwords - not found. Did you delete it?')
 	sys.exit(1)
 else:
 	contents = conn.read()
@@ -31,5 +37,5 @@ def main (args):
 	if args['secure']:
 		1
 	else:
-		for password in bad_passwords:
+		for password in args['passwords']:
 			print(password in bad_passwords)

@@ -40,5 +40,5 @@ if __name__ == '__main__':
 
 	main({
 		"passwords": arguments['<password>'],
-		"secure":    arguments['--secure'] or arguments['-s']
+		"secure":    arguments['--secure']
 	})
