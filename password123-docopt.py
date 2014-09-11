@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 """
 password123
@@ -21,7 +21,7 @@ Arguments:
 	                commonly used passwords.
 
 Options:
-	-s, --secure    Should password123 securely prompt for your password?
+	--secure        Should password123 securely prompt for your password?
 	                This is a good idea if you indent to use the password
 	                you are checking is actually your password.
     --version       Show the version number.
