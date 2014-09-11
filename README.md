@@ -5,6 +5,8 @@ password123 is a command-line tool for checking if a password is one of the
 10,000 most commonly used. Such passwords should not be used as they are highly
 vulnerable to brute force attacks.
 
+<img src="password123.gif"> </img>
+
 This tool complements my other password tools, [polonium](https://github.com/rgrannell1/polonium) and
 [polonium-gui](https://github.com/rgrannell1/polonium-gui). These tools generate secure site-specific passwords given a secure master password, but they give little security if your master password is common.
 
