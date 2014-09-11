@@ -17,7 +17,8 @@ Description:
 	as they will be the first guesses during a brute-force attack.
 
 Arguments:
-	<password>      The passwords you wish to check.
+	<password>      The passwords to check for membership in the 10,000 most
+	                commonly used passwords.
 
 Options:
 	-s, --secure    Should password123 securely prompt for your password?
@@ -28,6 +29,10 @@ Options:
 
 from docopt      import docopt
 from password123 import main
+
+
+
+
 
 if __name__ == '__main__':
 
