@@ -5,7 +5,7 @@ password123
 
 Usage:
 	password123 <password> ...
-	password123 (-s|--secure)
+	password123 (-s | --secure)
 	password123 (-h | --help | --version)
 
 Version:

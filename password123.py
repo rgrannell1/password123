@@ -31,4 +31,5 @@ def main (args):
 	if args['secure']:
 		1
 	else:
-		[print(password in bad_passwords) for password in passwords]
+		for password in bad_passwords:
+			print(password in bad_passwords)
